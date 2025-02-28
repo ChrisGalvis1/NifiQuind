@@ -11,7 +11,7 @@ public class ExecutionCyclesApis {
             String nifiStatus = getStatusNifi();
             if (STATUS_NIFI_STOP.equals(nifiStatus)) {
                 System.out.println("Proceso terminado....");
-                return true;
+                return false;
             }
             try {
                 Thread.sleep(WAIT_TIME);

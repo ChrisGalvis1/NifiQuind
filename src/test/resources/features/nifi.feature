@@ -3,7 +3,7 @@ Feature: Validar interacción con Apache Nifi
   Quiero validar que Nifi se este ejecutando
   Para validar que en el flujo de datos se crea un archivo.csv
 
-  Scenario Outline: Validar el flujo parametrizado en Nifi
+  Scenario: Validar el flujo parametrizado en Nifi
     Given qa consulta si nifi se esta ejecutando
     When realiza la ejecucion del flujo parametrizado
     And realiza la consulta de nifi
